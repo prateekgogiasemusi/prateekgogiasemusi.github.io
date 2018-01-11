@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+@import 'reset.css';
+/*----------- Margin -----------*/
+.mr_none {margin:0px !important;}
+.mr_b5,.mr_b10,.mr_b15,.mr_b20,.mr_b25,.mr_b30,.mr_b35,.mr_b40,.mr_b45,.mr_b50,.mr_b55,.mr_b60 {clear:both;}
+.mr_b5 {margin-bottom:5px;}
+.mr_b10 {margin-bottom:10px;}
+.mr_b15 {margin-bottom:15px;}
+.mr_b20 {margin-bottom:20px;}
+.mr_b25 {margin-bottom:17px;}
+.mr_b30 {margin-bottom:30px;}
+.mr_b35 {margin-bottom:35px;}
+.mr_b40 {margin-bottom:40px;}
+.mr_b45 {margin-bottom:45px;}
+.mr_b50 {margin-bottom:50px;}
+.mr_b55 {margin-bottom:55px;}
+.mr_b60 {margin-bottom:60px;}
+.less-gutter [class*="col-"]{padding-left:5px; padding-right:5px;}
+
+/*-------------------------------------------------------------------------------------
+  Nach Details
+-------------------------------------------------------------------------------------*/
+#lender-landing{color:#181415; position:relative;}
+#lender-landing:after{background:url("../images/corner.png") top right no-repeat; display:block; width:87px; height:88px; position:absolute; content:''; top:0; right:0;}
+#lender-landing .landing-page-top{padding:50px 0;}
+#lender-landing .stock-market{background:#eff3f9; border:14px solid #0095d0; position:relative;}
+#lender-landing .stock-market .stock-market-inn .stock-title{padding-left:72px;}
+#lender-landing .stock-market .stock-market-inn h1{font-size:46px; font-weight:800; color:#0095d0; background:url("../images/stock_market_icon.png") left top no-repeat; padding-left:144px; margin-bottom:17px; line-height:54px; padding-bottom:10px;}
+#lender-landing .stock-market .stock-market-inn h1 span{color:#181415; display:block;}
+#lender-landing .stock-market .stock-market-inn h4{font-size:20px; font-weight:600; color:#181415; margin-bottom:15px; line-height:24px;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage{padding:30px 0;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .adv-title h2{font-size:30px; font-weight:400; text-transform:uppercase; margin-bottom:20px;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .advantage-cat{margin:15px 0; overflow:hidden;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .advantage-cat .cat-icon{float:left;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .advantage-cat .cat-description{padding-left:72px;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .advantage-cat .cat-description h3{font-size:22px; text-transform:uppercase; font-weight:500; margin-top:5px; margin-bottom:10px;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .advantage-cat .cat-description p{font-size:16px; line-height:26px; font-weight:500; word-spacing:3px; margin:0; color:rgba(0,0,0,0.8); text-align: left;}
+
+#lender-landing .faircent-experience{background:#eff3f9; padding:55px 0; position:relative;}
+#lender-landing .faircent-experience .fair-exp-inn{position:relative; padding-left:70px;}
+#lender-landing .faircent-experience .fair-exp-inn:before{position:absolute; content:''; left:24px; top:50px; display:block; width:1px; height:92%; background:#000000;}
+#lender-landing .faircent-experience .fair-exp-inn:after{position:absolute; content:''; left:0px; top:0px; display:block; width:48px; height:48px; background:url("../images/exp_icon.png") no-repeat;}
+
+#lender-landing .faircent-experience .fair-exp-inn h2{font-size:20px; color:rgba(0,0,0,0.8); font-weight:bold; margin-bottom:27px; word-spacing:3px;text-align: left;}
+#lender-landing .faircent-experience .fair-exp-inn p{font-size:16px; line-height:26px; font-weight:500; word-spacing:3px; color:rgba(0,0,0,0.8); margin:0;text-align: left;}
+
+#lender-landing .faircent-experience .fair-exp-inn .uaer-area{overflow:hidden; margin:40px 0 5px 0px;}
+#lender-landing .faircent-experience .fair-exp-inn .uaer-area .user-img{float:left;}
+#lender-landing .faircent-experience .fair-exp-inn .uaer-area .user-img img{width:54px; height:54px; border-radius:100%;}
+#lender-landing .faircent-experience .fair-exp-inn .uaer-area .user-details{padding-left:76px;}
+#lender-landing .faircent-experience .fair-exp-inn .uaer-area .user-details p{font-size:24px; margin:0;}
+#lender-landing .faircent-experience .fair-exp-inn .uaer-area .user-details p span{font-size:16px; text-transform:uppercase; display:block;}
+#lender-landing .faircent-experience .fair-exp-inn .uaer-area .user-details p.map{font-size:16px; color:rgba(0,0,0,0.8); font-weight:300; background:url("../images/maps-icon.png") 0px 7px  no-repeat; padding-left:20px;}
+
+.faircent-experience.market {background: #fff none repeat scroll 0 0 !important;}
+.faircent-experience.market .fair-exp-inn:after{position:absolute; content:''; left:0px; top:0px; display:block; width:48px; height:48px; background:url("../images/info_icon.png") no-repeat !important;}
+
+.faircent-experience.market2 .fair-exp-inn:after{position:absolute; content:''; left:0px; top:0px; display:block; width:48px; height:48px; background:url("../images/exp_icon2.png") no-repeat !important;}
+
+#lender-landing .faircent-experience.market .fair-exp-inn:before{position:absolute; content:''; left:24px; top:50px; display:block; width:1px; height:90% !important; background:#000000;}
+.faircent-experience.media .fair-exp-inn:after{position:absolute; content:''; left:0px; top:0px; display:block; width:48px; height:48px; background:url("../images/media_icon.png") no-repeat !important;}
+.faircent-experience.market .peer-landing{display:table; margin:35px 0 0 0;}
+.faircent-experience.market .peer-landing li{display:table-cell; vertical-align:middle; box-sizing:border-box; padding:20px; color:#FFFFFF; font-size:25px; letter-spacing:5px;  width:202px; height:170px; border:5px solid #ffffff;}
+.faircent-experience.market .peer-landing li .ft30{font-size:15px;}
+.faircent-experience.market .peer-landing li .text{display:block; font-size:16px;  word-spacing:5px; line-height:22px; letter-spacing:2px; font-weight:400; margin-top:10px;}
+.faircent-experience.market .peer-landing li.green{background:#5ec8b3;}
+.faircent-experience.market .peer-landing li.blue{background:#4d8fe1;}
+.faircent-experience.market .peer-landing li.light-blue{background:#4bc7e2;}
+.faircent-experience.market .peer-landing li.red{background:#ed795b;}
+
+#lender-landing .footer-section{padding:60px 0px; background:#d1d9e5;}
+#lender-landing .footer-section .footer-sect-inn{width:50%; text-align:center; padding-left:100px;}
+#lender-landing .footer-section .footer-sect-inn h2{font-size:20px; font-weight:400; text-transform:uppercase;}
+#lender-landing .footer-section .footer-sect-inn a{margin:20px 0; display:inline-block; background:#118ac5 url("../images/button-arrow.png") 310px center no-repeat; padding:20px 65px 20px 20px; font-size:19px; color:#ffffff; border-radius:30px; font-weight:500;}
+#lender-landing .footer-section .footer-sect-inn a:hover,.signup-form .form-inner-sec a:hover{text-decoration:none;}
+
+/*Sign up form*/
+.signup-form{width:365px; background:#ffffff; border-radius:16px; position:fixed; top:30px; right:100px; z-index:9999; box-shadow:0px 10px 30px rgba(0,0,0,0.2);}
+.signup-form .signup-title{text-align:center; padding:10px 30px; box-shadow:0px 10px 25px rgba(0,0,0,0.1); border-top-left-radius:16px; border-top-right-radius:16px;}
+.signup-form .signup-title h2{font-size:26px; font-weight:300;margin:0 0 10px 0; color:#11293c;}
+.signup-form .signup-title p{text-transform:uppercase; font-weight:bold; font-size:12px; margin-bottom:4px; color:#11293c;}
+.signup-form .form-inner-sec{padding:18px 45px;}
+
+.group{position:relative;margin-bottom:10px; width:100%;}
+.inputMaterial{font-size:16px;padding:8px 10px 6px 0px;display:block;width:100%;border:none;border-bottom:1px solid #e6e8ea; font-weight:300; line-height:30px; background:transparent;}
+.inputMaterial:focus{outline:none}
+label{color:#999;font-size:18px;font-weight:300;position:absolute;pointer-events:none;left:0px;top:22px;transition:.2s ease all;-moz-transition:.2s ease all;-webkit-transition:.2s ease all}
+.inputMaterial:focus ~ label,.inputMaterial:valid ~ label{top:-5px;font-size:12px;color:rgba(17,41,60,0.5);}
+.bar{position:relative;display:block;width:100%}
+.bar:before,.bar:after{content:'';height:1px;width:0;bottom:1px;position:absolute;background:#e6e8ea;transition:.2s ease all;-moz-transition:.2s ease all;-webkit-transition:.2s ease all}
+.bar:before{left:50%}
+.bar:after{right:50%}
+.inputMaterial:focus ~ .bar:before,.inputMaterial:focus ~ .bar:after{width:50%}
+.inputMaterial:focus ~ .highlight{-webkit-animation:inputHighlighter .3s ease;-moz-animation:inputHighlighter .3s ease;animation:inputHighlighter .3s ease}
+@-webkit-keyframes inputHighlighter{from{background:#5264AE}to{width:0;background:transparent}}
+@-moz-keyframes inputHighlighter{from{background:#5264AE}to{width:0;background:transparent}}
+@keyframes inputHighlighter{from{background:#5264AE}to{width:0;background:transparent}}
+
+.signup-form .form-inner-sec .submit-button{display:inline-block; background:#118ac5 url("../images/button-arrow.png") 105px center no-repeat; padding:10px 50px 10px 22px; font-size:19px; color:#ffffff; border-radius:30px; font-weight:500; margin:5px 0 0 0; text-transform:uppercase;}
+
+
+.fr-msg{font-size:10px; margin:5px 0 0 0; color:rgba(17,41,60,0.4);} 
+
+/*Great Message Form*/
+#great-msg{display:none;}
+#great-msg .signup-title{background:#5dcee6; text-align:left; position:relative; padding:20px 30px 10px 30px;}
+#great-msg .signup-title h2,#great-msg .signup-title p{color:#ffffff;}
+#great-msg .signup-title p{text-transform:none; line-height:16px; margin:0; font-weight:400;}
+#great-msg .signup-title img{position:absolute; right:30px; top:27px;}
+#great-msg .agree-sec{background:#eff3f9; overflow:hidden; min-height:100px; margin-left:-45px; margin-right:-45px; padding-left:45px; padding-right:45px; padding-top:5px; margin-bottom:16px;}
+#great-msg .agree-sec label{pointer-events:auto;}
+#great-msg .agree-sec a{color:#1576b8; font-weight:500;}
+
+ /*check box*/
+.form-check .checkbox {width:25px; height:25px; background-color:#2d7cbc; position:relative; box-shadow:0px 2px 3px rgba(0,0,0,0.5);}
+.form-check .checkbox input[type="checkbox"] {visibility: hidden;}
+.form-check .checkbox label {width:23px; height:23px; position:absolute; top:1px; left:1px; background-color:white; cursor:pointer;}
+.form-check .checkbox label:before {content: ''; width:14px; height:7px; border:3px solid white; position:absolute; border-top:none; border-right:none;  transform:rotate(-45deg); top:7px; left:5px; opacity:0; transition:all 300ms;}
+.form-check .checkbox input[type="checkbox"]:checked + label:before {opacity: 1; width:14px; height:7px;}
+.form-check .checkbox input[type="checkbox"]:checked + label {background-color: #2d7cbc;}
+.form-check .checkbox span{position:absolute; left:40px; top:-3px; width:238px; font-size:10px; line-height:15px;}
+
+/*Borrower Landing*/
+.borrower-landing{}
+.borrower-landing .stock-market{background:#ffffff url("../images/wedding.png") center top no-repeat !important;}
+.borrower-landing #personal-loan{background:#ffffff url("../images/personal.png") center top no-repeat !important;}
+.borrower-landing .stock-market .stock-market-inn h1{background:none !important; padding-left:0 !important;}
+.borrower-landing .stock-market .stock-market-inn .stock-title{padding-left:0 !important;}
+.signup-form .signup-title.dark{background:#1081c5;}
+.signup-form .signup-title.dark h2,.signup-form .signup-title.dark p{color:#ffffff;}
+
+/*Responsive*/
+#lender-landing .stock-market .stock-market-inn .stock-title .stock-img{display:none; margin:0 auto; width:60px; height:59px;}
+.mobile-form{margin:60px 0px 70px 0;}
+.htlogo2{display:none;}
+
+/*Media Query*/
+@media(max-width:1199px){
+#lender-landing .stock-market .stock-market-inn .stock-title{padding-left:0;}	
+	
+}
+
+@media(max-width:768px){
+<<<<<<< HEAD
+	.signup-form .form-inner-sec {
+    padding: 18px 8px;
+    overflow:hidden;
+}
+=======
+.btn.btn-blue.form-submit {margin-left: -40px !important;}
+>>>>>>> d4f321bb8f4fb73eb84f35741dc6dc5153a5df77
+#lender-landing .stock-market{background:#ffffff;}	
+#lender-landing .landing-page-top {text-align:center;}
+#lender-landing .landing-page-top img{margin:0 auto;}
+#lender-landing .stock-market .stock-market-inn h1{background:none; font-size:30px; padding:0; text-align:center; line-height:35px;}	
+#lender-landing .stock-market .stock-market-inn .stock-title .stock-img{display:block;}
+#lender-landing::after {background: rgba(0, 0, 0, 0) url("../images/corner2.png") no-repeat scroll right top; content: ""; display: block; height:58px; position: absolute; right: 0; top: 0; width: 58px;}
+#lender-landing .stock-market{border-width:11px;}
+#lender-landing .stock-market .stock-market-inn h4{font-size:14px; text-align:center; line-height:20px;}
+.signup-form{width:100%; position:relative; left:0; top:20px;}
+.form-check .checkbox span{width:165px;}
+#great-msg .agree-sec{min-height:165px;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .adv-title h2{padding-left:0; text-align:center;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .advantage-cat .cat-icon{float:none; text-align:center; width:100%; margin:18px auto;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .advantage-cat .cat-description{padding-left:0; text-align:center;}
+#lender-landing .stock-market .stock-market-inn .faircent-advantage .advantage-cat{margin:22px 0;}
+#lender-landing .faircent-experience .fair-exp-inn .uaer-area .user-details p{font-size:20px;}
+.faircent-experience.market .peer-landing li{display:block;}
+#lender-landing .footer-section .footer-sect-inn{padding-left:0; width:100%;}
+#lender-landing .footer-section .footer-sect-inn a{border-radius:60px; text-align:center;  padding:15px 30px 40px 30px; line-height:28px; background:#118ac5 url("../images/button-arrow.png") 132px 80px no-repeat; margin:30px 0;}
+#lender-landing .footer-section .footer-sect-inn a span{display:block;}
+#great-msg .signup-title img{right:15px;}
+#lender-landing .faircent-experience.market .fair-exp-inn::before{height:95%;}
+#lender-landing .faircent-experience .fair-exp-inn::before{height:90%;}
+.borrower-landing .stock-market{background:#ffffff url("../images/wedding.png") -150px 100px no-repeat !important; background-size:200% !important;}
+.borrower-landing #personal-loan{background:#ffffff url("../images/personal.png") -150px 100px no-repeat !important; background-size:200% !important;}
+.borrower-landing .stock-market .stock-market-inn .stock-title{padding-top:150px;}
+.borrower-landing #personal-loan .stock-title{padding-top:200px;}
+.htlogo{display:none;}
+.htlogo2{display:block;}
+}
+
+.nameerror{position:absolute; right:0; top:5px; color:#50bfa4; font-size:15px;}
+.nameerror2{position:absolute; right:0; top:5px; color:#da232a; font-size:15px;}
+
+
+.signup-form .float-label-control label{font-size: 0.8em !important; top:-0.9em !important;}
+
+.mobile-form .group {margin-bottom: 16px;float: left;}
+.mobile-form .group #dobfield {top: -18px;}
+.borrower-landing #business-loan{background:#ffffff url("../images/business_user.png") center top no-repeat !important;}
+a.pan_msg {
+    font-size: 13px;
+    position: relative;
+    top: -14px;
+    font-weight: 500;
+}
+.signup-form input,.signup-form select{font-size: 16px !important;}
+.borrow_verify_msg .floating-label-success .fa{top: 3px;}
+.borrow_verify_msg .float-label-control #show_mobile_message{top: 5px;}
+@media(max-width:768px){
+#lender-landing .landing-page-top{padding: 3px 0; text-align: left;}
+.lender_reg_submit{margin:0 0 10px 0px !important ;}
+#lender-landing .footer-section .footer-sect-inn a{border-radius:60px; text-align:center;  padding:15px 30px 17px 30px; line-height:28px; background:#118ac5 !important; margin:30px 0;}
+
+.landing_page_design .landing-page-top img {width: 60%;}
+.landing_page_design  #personal-loan .stock-title {padding-top: 25px;}
+.landing_page_design .stock-market .stock-market-inn h1 {font-size: 20px !important;text-align:left !important;line-height: 23px !important;}
+.landing_page_design .stock-market .stock-market-inn h4 {font-size: 18px !important;text-align: left !important;line-height: 23px !important; width: 45%;}
+.landing_page_design .stock-market .stock-market-inn .mobile-form {margin: 90px 0px 70px 0;}
+
+
+}
+
+
+
+
+
+
+
+
+
+

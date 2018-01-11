@@ -1,0 +1,9 @@
+
+.content-sidebar-wrap.blog-left {
+    float: right !important;
+    width: 816px !important;
+}
+#sidebar-second.blog-nav-left {
+    width: 160px !important;
+    float:left !important;
+}

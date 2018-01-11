@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+
+.portfolio-wrapper{position: relative; width: 100%;}
+.portfolio-wrapper .portfolio-area-inner{border: 12px solid #1377b6; position: relative;}
+.portfolio-wrapper .portfolio-area-inner::after{position: absolute; content: ''; width: 86px; height: 80px; background: url("https://www.faircent.com/sites/all/modules/custom/stats/images/page-corner.jpg") no-repeat; display: block; top: -13px; right: -56px;}
+
+.portfolio-wrapper .portfolio-area-inner .portfolio-header{padding: 25px 30px;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-header .issues-date{text-align: right; font-size: 18px; color: #4d4d4d; padding-top: 10px;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-header .issues-date a{border: none; margin-top: 5px; font-family: 'Open Sans', sans-serif; font-weight: normal; float: right;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-banner img{margin: 0 auto;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance{background: #f6f6f6; padding: 25px;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance h2{color: #000000; font-size: 3.3rem; font-weight: 700; font-family: 'Open Sans', sans-serif;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance .perform-content{background: #ffffff; padding: 15px; margin: 15px 0; box-shadow: 0 3px 5px rgba(0,0,0,0.2);}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance p{font-weight: 300; font-size: 16px; line-height: 26px; text-align: justify;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance  p.disclaimer-title{color: #1377b7; font-size: 18px;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance .perform-content ul li{list-style: disc; font-weight: 300; font-size: 16px; line-height: 26px; text-align: justify; margin: 15px;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance .perform-content .graph-title{color: #1377b8; font-size: 20px; font-weight: 700; font-family: 'Open Sans', sans-serif; margin-top: 25px; margin-bottom: 15px;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance .perform-content .graph-title2{color: #1377b8; font-size: 20px; font-weight: 700; font-family: 'Open Sans', sans-serif; margin-top: 0px; margin-bottom: 0px;}
+.portfolio-wrapper .portfolio-area-inner .portfolio-performance .perform-content .mr_b30{margin-bottom: 30px;}
+.portfolio-wrapper .portfolio-area-inner .footer-content p{font-weight: 400; font-size: 17px;}
+
+.portfolio-wrapper .portfolio-area-inner .color-coding{padding: 15px 0;}
+
+.portfolio-wrapper .portfolio-area-inner .color-coding ul li{font-size: 16px; font-weight: bold;}
+.portfolio-wrapper .portfolio-area-inner .color-coding ul li:nth-child(1){font-weight: normal; color: #333333;}
+.portfolio-wrapper .portfolio-area-inner .color-coding ul li:nth-child(2){color: #ffae80;}
+.portfolio-wrapper .portfolio-area-inner .color-coding ul li:nth-child(3){color: #ffca00;}
+.portfolio-wrapper .portfolio-area-inner .color-coding ul li:nth-child(4){color: #a1d562;}
+@media(min-width:991px){
+.portfolio-wrapper .portfolio-area-inner .color-coding ul li{margin: 0 25px;}	
+.portfolio-wrapper .portfolio-area-inner .chief-signature{min-height: 800px;}	
+}
+
+.portfolio-wrapper .portfolio-area-inner .chief-signature{position: relative;}
+.portfolio-wrapper .portfolio-area-inner .chief-signature .chief-sign-inner{position: absolute; bottom: 0; left: 20px;}
+
+@media(max-width:480px){
+.portfolio-wrapper .portfolio-area-inner .chief-signature .chief-sign-inner{position: relative; left: 0;}	
+}
+

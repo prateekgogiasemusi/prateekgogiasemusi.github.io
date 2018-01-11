@@ -1,0 +1,759 @@
+/*---------- Lender Portfolio ----------*/
+.lender-profile-section{position: relative;padding: 0 20px;}
+.lender-profile-section .profile-header{padding: 17px 0;}
+.lender-profile-section .profile-header h2{text-transform: uppercase;font-size: 22px; font-weight: 600; background: url("../images/portfolio-icon.png") 0px 2px no-repeat; padding: 0 0 0 44px; line-height: 33px; background-size:34px;}
+ 
+    
+.lender-profile-section .create-portfolio{/*background: #fbfbfb; */ padding: 18px 10px; /*box-shadow: 1px 3px 8px rgba(0,0,0,0.1); */ position: relative !important;     /*border: 0.1px solid grey;*/}
+.lender-profile-section .create-portfolio ul li{line-height: 47px;}
+.lender-profile-section .create-portfolio ul li .form-item{margin:0;}
+.lender-profile-section .create-portfolio ul li h3{font-size: 15px; font-weight: 600;}
+.lender-profile-section .create-portfolio ul li input{color: #111111;}
+.lender-profile-section .create-portfolio ul li:last-child{background: #ffffff; padding: 0px 8px 0 8px; /*border: 1px solid #e2e2e2; border-radius: 3px;*/}
+.lender-profile-section .create-portfolio ul li:last-child .form-group{margin-bottom: 3px;}
+.lender-profile-section .create-portfolio ul li:last-child .form-group input{box-shadow: none; border-color: #dfdfdf !important; font-size: 15px;background:#f6f6f6;height: 40px;border-radius:2px;}
+.lender-profile-section .create-portfolio .create_port_form .form-group{margin-right:25px;}
+.lender-profile-section .create-portfolio ul li:last-child .form-group input[type="submit"]{background: #1376b9 !important; border-color: #1376b9 !important; margin: 0 !important;position: relative; color:#fff;text-shadow:none !important;width: 230px; font-weight: bold;}
+.lender-profile-section .select_portfolio_outer #edit-submit--2,.lender-profile-section .select_portfolio_outer #edit-submit{background: #1376b9 !important; border-color: #1376b9 !important; box-shadow: none !important;    padding: 8px 22px;
+    font-weight: bold !important;
+    position: relative;
+    top: 25px;border-radius:2px;}
+ .lender-profile-section hr{border-top: 1px solid #707070;margin-top:15px;margin-bottom:25px;}
+.lender-profile-section .create-portfolio ul li:last-child .form-group #enter-amt{}
+.lender-profile-section .select-portfolio{padding: 1px 0 !important; margin-bottom: 26px !important;}
+.lender-profile-section .select-portfolio li:first-child{color: #333; margin-bottom: 10px; font-weight: normal;float:left;}
+.lender-profile-section .select-portfolio li #select-portfolio-list{width: 170px; font-size:14px; -webkit-appearance:none; -moz-appearance:none; background: #b6e8fd url("../images/arrow-selects.png") no-repeat scroll right 10px top 15px; border-color:#0ff3ff;font-weight:normal;height:38px;border-radius:2px;    border-width: 2px;}
+.lender-profile-section .select-portfolio{margin-left:16px;}
+/*
+.lender-profile-section .select-portfolio li select{box-shadow: none; -webkit-appearance:none; -moz-appearance:none; background: rgba(0, 0, 0, 0) url("../images/arrow-selects.png") no-repeat scroll right 5px top 11px !important;}*/
+.lender-profile-section .select-portfolio .my_portfolio li{float:none;}
+.lender-profile-section .portfolio-show-amt{padding: 10px 0 20px 0; text-align: center;}
+.lender-profile-section .portfolio-show-amt li{min-width: 266px; text-align: center;}
+.lender-profile-section .portfolio-show-amt li p{font-weight: 600; margin-bottom: 10px; text-transform: uppercase; color: #333;}
+.lender-profile-section .portfolio-show-amt li .wallet-balance{background: #1376b9; padding:10px 5px; color: #ffffff; display: block; font-size: 20px; font-weight: 600; border-radius: 5px;width:223px;position:relative;}
+.lender-profile-section .portfolio-show-amt li .wallet-balance p{color:white;font-size:12px;text-align:center;margin:0px;}
+.lender-profile-section .portfolio-show-amt li .wallet-balance span{width: 38px;height: 36px; background: url("../images/total-balance.png") no-repeat; display: inline-block; position: relative; top: 3px; margin-right: 3px; display: block;margin: 0px auto;}
+.lender-profile-section .portfolio-show-amt li .wallet-balance i{font-size: 18px;}
+.lender-profile-section .portfolio-show-amt li:last-child .wallet-balance{background: #0e5f94;}
+.lender-profile-section .container-inline-date{margin-top: 0px; width: 100%;}
+.lender-profile-section .portfolio-show-amt li .wallet-balance.available-balance span{ background: url("../images/available-balance.png") no-repeat;}
+.lender-profile-section .addwalletcontainer{text-align:center;position: relative;}
+.lender-profile-section .addwalletcontainer #addwalletamount{display: block;width: 225px;margin: 0;background: #eee;border: 1px solid #eee;
+    height: 35px; padding-left: 10px;border-radius: 6px;margin-top:5px;
+}
+.lender-profile-section .addwalletcontainer a{
+background: #1376b9;
+    width: 30px;
+    height: 25px;
+    display: block;
+    color: #ffffff;
+    line-height: 24px;
+    border-radius: 6px;
+    position: absolute;
+    top: 6px;
+    right: 42px;
+}
+.lender-profile-section .add-loan-portfolio{padding: 20px 0 15px 0;
+    background-color: #ecf6fc;
+    margin-bottom: 30px;}
+.lender-profile-section .add-loan-portfolio .ui-widget.ui-widget-content{border: none; margin: 10px 0;} 
+.lender-profile-section .add-loan-portfolio .ui-widget-content{background: #b4b4b4;}
+.lender-profile-section .add-loan-portfolio .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl{border-radius: 0 !important;}
+
+.lender-profile-section .add-loan-portfolio .ui-slider-horizontal {height: 2px;}
+
+.lender-profile-section .add-loan-portfolio .ui-slider .ui-slider-handle{width: 15px !important; height: 15px !important; border-radius: 100% !important; background: #1376b9 !important; border-color: #1376b9 !important; top: -6px !important;}
+.lender-profile-section .add-loan-portfolio #select-portfolio {border: none; border-bottom: 2px solid #b4b4b4; border-radius: 0; box-shadow: none; padding-left: 2px; font-weight: 600; color: #333333; z-index: 9999999;}
+.lender-profile-section .add-loan-portfolio #select-portfolio{-webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; background: url("../images/arrow-selects.png") right top 15px no-repeat; margin-top: 0px;    background-size: 8px;}
+
+
+.lender-profile-section .add-loan-portfolio .ui-widget-header{background: #1376b9;}
+.lender-profile-section .add-loan-portfolio .label{color: #333333; font-weight: 600; font-size: 12px; margin-bottom: 3px; display: block; text-align: left; padding-left: 0;}
+.lender-profile-section .add-loan-portfolio .label i{font-size: 10px;}
+.lender-profile-section .add-loan-portfolio #datepicker{border: none; border-bottom: 3px solid #b4b4b4; border-radius: 0; box-shadow: none; padding-left: 5px; font-weight: 600; color: #333333; z-index: 9999999;}
+.lender-profile-section .portfolio-table{padding: 0px 0 0 0;}
+.lender-profile-section .portfolio-table th{font-weight: bold; font-size: 13px !important;padding: 8px;line-height: 1.42857143; vertical-align: top;border-top: 1px solid #dddddd !important; border-bottom: 1px solid #dddddd !important; color: #000000; text-transform: capitalize !important; background: none; cursor: pointer !important;}
+.portfolio-table th span{font-size: 10px;}
+.lender-profile-section .portfolio-table td{color: #333333; font-weight: normal;  font-size: 13px; padding-top: 5px; padding-bottom: 10px;}
+.lender-profile-section .portfolio-table th:nth-child(1),.lender-profile-section .portfolio-table td:nth-child(1){width: 13%;}
+.lender-profile-section .portfolio-table th:nth-child(2),.lender-profile-section .portfolio-table td:nth-child(2){width: 13%;}
+.lender-profile-section .portfolio-table th:nth-child(3),.lender-profile-section .portfolio-table td:nth-child(3){width: 10%;}
+.lender-profile-section .portfolio-table th:nth-child(4),.lender-profile-section .portfolio-table td:nth-child(4){width: 10%;}
+.lender-profile-section .portfolio-table th:nth-child(5),.lender-profile-section .portfolio-table td:nth-child(5){width: 10%;}
+.lender-profile-section .portfolio-table th:nth-child(6),.lender-profile-section .portfolio-table td:nth-child(6){width: 10%;}
+.lender-profile-section .portfolio-table th:nth-child(7),.lender-profile-section .portfolio-table td:nth-child(7){width: 25%;}
+.lender-profile-section .portfolio-table td .defaul-value{font-size: 11px; opacity: 0.7;}
+.lender-profile-section .portfolio-table .table-options{position: absolute;}
+.lender-profile-section .portfolio-table .table-options ul li{margin-right: 5px;position: relative;float:left;}
+.lender-profile-section .portfolio-table .table-options ul li:last-child{margin: 0;}
+.lender-profile-section .portfolio_borrower_list .table-options ul li{margin:0px !important;}
+.lender-profile-section .portfolio-table .table-options ul li:first-child{min-width:70px;}
+
+.lender-profile-section .portfolio-table .table-options .emi-details{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ddd #dddddd #dddddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+.lender-profile-section .portfolio-table .emi-details table,.lender-profile-section .portfolio-table .emi-checked table{margin: 0; background:; border:1px solid #ddd;}
+.lender-profile-section .portfolio_borrower_list .emi-details th{font-size: 11px; width:25% !important;}
+.lender-profile-section .portfolio_borrower_list .emi-details td{font-size: 11px; width:25% !important;}
+.lender-profile-section .portfolio-table .emi-amts{position: relative; cursor: pointer;}
+
+.lender-profile-section .portfolio-table .table-options .default-amt{padding-top: 3px; padding-bottom: 3px; margin: 0; color: #1cb9ff;   border-bottom: 2px solid #1cb9ff;}
+
+.lender-profile-section .portfolio-table .table-options .emi-checked.emi-checked {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #dddddd #dddddd #dddddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 1px;
+    background-color: white;
+}
+.lender-profile-section .portfolio-table .emi-checked th:nth-child(2){width:10% !important;padding: 0px;}
+.lender-profile-section .portfolio-table .emi-checked th:FIRST-CHILD{width:2%;vertical-align: middle;}
+.lender-profile-section .portfolio-table .emi-checked th{font-size: 11px;width:20%;vertical-align: middle;}
+.lender-profile-section .portfolio-table  .emi-checked td:FIRST-CHILD{width:5% !important;}
+.lender-profile-section .portfolio-table  .emi-checked td{font-size: 11px;width:20% !important;}
+.lender-profile-section .portfolio-table  .emi-checked table{margin: 0; border:1px solid #ddd;}
+.create-portfolio-inner .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.lender-profile-section  .slider_text{border:0; color:#333; font-weight:normal; width:100% !important; background-color:#f9feff !important;}
+.lender-profile-section .description{display:none;}
+.lender-profile-section #edit-start-date-datepicker-popup-0{    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #b4b4b4;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: medium medium 3px;
+    box-shadow: none;
+    color: #333333;
+    font-weight: 600;
+    padding-left: 2px;
+    z-index: 9999999;font-size: 12px; background:none; border-bottom-color: #b4b4b4;cursor:pointer;}
+.lender-profile-section #edit-submit{
+    margin:0;
+    }
+  table.tableSection {
+        display: table;
+        width: 100%;
+    }
+    table.tableSection thead, table.tableSection tbody {
+        float: left;
+        width: 100%;
+    }
+    table.tableSection tbody {
+       
+    }
+    table.tableSection tr {
+        width: 100%;
+        display: table;
+        text-align: left;
+    }
+    table.tableSection th, table.tableSection td {
+        width: 33%;
+    }
+
+    .portfolio_date .form-type-date-popup{
+        width: 100% !important;
+    }
+   .lender-profile-section .select_portfolio_outer {
+  /*  background: #f9feff !important;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1) !important;*/
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+    margin-top: 30px !important;
+    padding: 18px 10px !important;
+    position: relative;
+    /*border: 0.1px solid grey;*/
+   }
+ .create-portfolio h3, .select_portfolio_outer
+ h3{
+    text-align: left; font-weight: 600; color: #585858;font-size:18px; text-transform: uppercase;
+}
+ .create-portfolio h3 a{text-transform:capitalize;}
+ .select_portfolio_outer h3 a.more-info{text-transform:capitalize;}
+ .create-portfolio h3{margin-bottom:30px;}
+.emi_heading{position:relative;}
+.emi_heading i{position:absolute;right:10px;}
+.add_loan_btn{
+    background: #94d704 none repeat scroll 0 0 !important;
+    border-color: #94d704 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    position: relative !important;
+    text-shadow: none !important;
+}
+.add_loan_btn:hover{
+    background: #94d704 none repeat scroll 0 0 !important;
+    border-color: #94d704 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    position: relative !important;
+    text-shadow: none !important;
+}
+.edit_loan_btn{
+    background: #94d704 none repeat scroll 0 0 !important;
+    border-color: #94d704 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    position: relative !important;
+    text-shadow: none !important;
+}
+.edit_loan_btn:hover{
+    background: #94d704 none repeat scroll 0 0 !important;
+    border-color: #94d704 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    position: relative !important;
+    text-shadow: none !important;
+}
+
+.select-portfolio #delete-portfolio{
+   text-align: left;
+    position: relative;
+    left: 1px;
+    top: 7px;
+    display: inline-block;
+}
+
+.select-portfolio #delete-portfolio a{
+    color: #f04848;
+    font-size: 11px;  
+}
+
+.select-portfolio .my_portfolio li:nth-child(2) {
+    margin-right: 45px; position: relative;
+}
+
+#edit-submit{/*background: #467899 !important; border-color: #467899 !important;*/ box-shadow: none !important;}
+
+
+select option:first-child {
+    font-size: 15px;
+    color: #2A8FC5;
+    background-color: #FBFBFB;
+  }
+  h3{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .tree_graph{
+    float: left;
+    width: 452px;
+    height: 405px;
+    overflow: hidden;
+    border: 2px solid rgba(16, 16, 16, 0.36);
+    margin-right: 5px;
+    margin-top:10px;
+  }
+  .summary{
+    height: 190px;
+    background-color: #FFFFFF;
+  }
+
+  .summary th{
+    font-weight: bold !important;
+  }
+
+  .summary.summary-middle {
+   
+  }
+
+  .tutorial, .more-info, #understand_anchor{
+    /* display: block; */
+    font-size: 11px;
+    color: #0d7cbc;
+    /* top: 5px; */
+    position: relative;
+    left: 10px;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+  .tutorial{
+    font-size: 13px !important;
+    font-weight: bold;
+  }
+
+  .more-info-div{
+    position: absolute;
+    background: #ffffff;
+    font-size: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 70%;
+    z-index: 9999;
+    padding: 5px 15px;
+    left: 85px;
+    border-radius: 5px;
+    display: none;
+    font-weight: normal;
+    text-align: left;
+  }
+  #clear-default{
+    font-size: 12px;
+    float: right;
+    margin-right: 70px;
+    padding-bottom: 10px;
+  }
+    .whatif_tut{
+    text-decoration: underline !important;
+    font-weight: bold;
+     font-size: 12px !important;
+    }  
+  #desc-this{
+   /* display: inline-block !important;*/
+   display:none;
+    margin-left: 100px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  #edit-start-date-datepicker-popup-0::-webkit-input-placeholder {
+    color: #333333;
+  }
+   #edit-start-date-datepicker-popup-0::-moz-input-placeholder {
+    color: #333333;
+  }
+  .back-btn{
+    font-size: 12px;
+    float: right;
+    margin-right: 72px;
+    padding-bottom: 10px;
+    margin-top: -28px;
+  }
+  a:hover{
+    cursor: pointer;
+  }
+  .lender-profile-section .register_lender {
+    position: fixed;
+    top: 18%;
+    right: 4px;
+    z-index: 99999;
+}
+ .lender-profile-section .register_lender a img{
+    padding: 0;
+    background: none;
+ }
+
+ #understand_anchor {
+    left: 10%;
+}
+
+#log_in_msg{
+    color: #FF0000;
+  }
+  .tree_graph{
+    width: 100%; 
+    min-height: 20%;
+  }
+  #desc-this{
+   /* display: inline-block;*/
+    margin-left: 100px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+
+/* Amortization Calculator */
+.amortization-calculator .add-loan-portfolio{background: #fff; padding: 20px 10px 20px 20px;}
+.amortization-calculator .add-loan-portfolio input{width: 80%; padding: 3px; border: 1px solid #c2c2c2; !important; height: 33px; margin-top: 10px; background: #fff !important; color: #555;
+    font-weight: normal;}
+.amortization-calculator .add-loan-portfolio #datepicker{background: none !important; border-bottom: 2px solid #959595 !important; border-top: 0px solid #ffffff !important; border-left: 0px solid #ffffff !important; border-right: 0px solid #ffffff !important; margin: 0; font-size: 14px; font-weight: normal; width: 100%;}
+.amortization-calculator .add-loan-portfolio #datepicker::-webkit-input-placeholder{color: #000000;}
+.amortization-calculator .add-loan-portfolio #datepicker::-moz-placeholder{color: #000000;}
+
+.amortization-calculator.lender-profile-section .profile-header h2{background: rgba(0, 0, 0, 0) url("../images/loan-amol-icon.png") no-repeat scroll 0 2px; line-height: 42px;}
+.amortization-calculator .calculator-msg p{font-size: 13px; font-weight: normal; line-height: 22px; color: #333333; opacity: 0.8;}
+
+.amortization-calculator.lender-profile-section .portfolio-table{background: none; padding: 10px; margin: 20px 0; border: 1px solid #c2c2c2;}
+.amortization-calculator.lender-profile-section .portfolio-table table th{border: none;}
+
+.amortization-calculator .emi-calculation{margin-top: 20px; background: #fff; padding: 10px; border: 1px solid #c2c2c2;}
+.amortization-calculator .emi-calculation .emi-details-lists {padding: 0 15px;}
+.amortization-calculator .emi-calculation .emi-details-lists li:first-child{padding-top: 20px;}
+.amortization-calculator .emi-calculation .emi-details-lists li:last-child{margin-bottom: 0; border-bottom: none;}
+.amortization-calculator .emi-calculation .emi-details-lists li{display: block; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #dddfe0; text-align: center; font-size: 14px; font-weight: normal; opacity: 0.7;}
+.amortization-calculator .emi-calculation .emi-details-lists li span{display: block; font-size: 24px; color: #111111; margin-top: 11px; font-weight: normal; opacity: 1;}
+.amortization-calculator .emi-calculation .emi-details-lists li span i{font-size: 22px;}
+
+.amortization-calculator .add-loan-portfolio {overflow: hidden; padding: 20px 10px; border: 1px solid #c2c2c2;}
+.amortization-calculator .add-loan-portfolio li{width: 20%; float: left; box-sizing: border-box; padding: 0 12px; position: relative;}
+.amortization-calculator .add-loan-portfolio li #enter-amount-input{border:0px solid #fff !important; border-bottom: 2px solid #959595 !important; margin: 0; width: 100%; background: none !important;}
+.amortization-calculator .add-loan-portfolio li #enter-amount-input::-webkit-input-placeholder{color: #000000; font-size: 14px; font-weight: normal;}
+.amortization-calculator .add-loan-portfolio li #enter-amount-input::-moz-input-placeholder{color: #000000; font-size: 14px; font-weight: normal;}
+.amortization-calculator.lender-profile-section .add-loan-portfolio .ui-slider-horizontal{height: 2px; background: #959595;}
+.amortization-calculator.lender-profile-section .add-loan-portfolio .label{font-size: 14px; font-weight: normal;}
+
+.amortization-calculator.lender-profile-section .add-loan-portfolio .ui-slider .ui-slider-handle{background: #1376b9 !important;}
+.amortization-calculator.lender-profile-section .add-loan-portfolio .ui-widget-header{background: #1376b9 !important;}
+.amortization-calculator.lender-profile-section .add-loan-portfolio .ui-slider .ui-slider-handle{border-color: #1376b9 !important; top: -0.4em;}
+.amortization-calculator .add-loan-portfolio li:last-child input{border-radius: 0; padding: 9px 30px; position: relative; top: 10px; right: 0; float: right; transition: all 300ms; height: 42px; line-height: 23px; background: #2e6ca4; border-color: #2e6ca4; font-size: 15px;}
+
+.amortization-calculator .emi-calculation .chart-title{font-weight: 600; font-size: 16px; text-align: center; padding-top: 10px;}
+.amortization-calculator.lender-profile-section .portfolio-table th:nth-child(1){width: 8%;}
+.amortization-calculator.lender-profile-section .portfolio-table th:nth-child(2){width: 15%;}
+.amortization-calculator.lender-profile-section .portfolio-table th:nth-child(3){width: 20%;}
+.amortization-calculator.lender-profile-section .portfolio-table th:nth-child(4){width: 20%;}
+.amortization-calculator.lender-profile-section .portfolio-table th:nth-child(5){width: 10%;}
+.amortization-calculator.lender-profile-section .portfolio-table th:nth-child(6){width: 12%;}
+.amortization-calculator.lender-profile-section .portfolio-table th:nth-child(7){width: 15%;}
+.amortization-calculator.lender-profile-section .portfolio-table td{line-height: 32px;}
+
+
+@media(max-width:768px){
+ .amortization-calculator .add-loan-portfolio li{width: 100%;}    
+ .amortization-calculator.lender-profile-section .portfolio-table th{padding: 5px 3px; font-size: 6px;}
+ .amortization-calculator.lender-profile-section .portfolio-table td{line-height: 32px; padding: 5px 3px;}
+
+}
+
+.lender-profile-section .portfolio-table .faircent_loan_portfolio th:nth-child(1),.lender-profile-section .portfolio-table .faircent_loan_portfolio td:nth-child(1){width: 19%;}
+.lender-profile-section .portfolio-table .faircent_loan_portfolio th:nth-child(2),.lender-profile-section .portfolio-table .faircent_loan_portfolio td:nth-child(2){width: 16%;}
+.lender-profile-section .portfolio-table .faircent_loan_portfolio th:nth-child(3),.lender-profile-section .portfolio-table .faircent_loan_portfolio td:nth-child(3){width: 14%;}
+.lender-profile-section .portfolio-table .faircent_loan_portfolio th:nth-child(4),.lender-profile-section .portfolio-table .faircent_loan_portfolio td:nth-child(4){width: 15%;}
+.lender-profile-section .portfolio-table .faircent_loan_portfolio th:nth-child(5),.lender-profile-section .portfolio-table .faircent_loan_portfolio td:nth-child(5){width: 15%;}
+.lender-profile-section .portfolio-table .faircent_loan_portfolio th:nth-child(6),.lender-profile-section .portfolio-table .faircent_loan_portfolio td:nth-child(6){width: 21%;}
+.lender-profile-section .portfolio-table .faircent_loan_portfolio th:nth-child(7),.lender-profile-section .portfolio-table .faircent_loan_portfolio td:nth-child(7){width: 25%;}
+.portfolio-table-checkbox{ float: left; margin-right: 13px !important; position: relative; top: 8px;}
+.portfolio-table-numerictext{display: block; width: 123px; height: 25px; margin:0 !important;}
+.lender-profile-section .portfolio-table .faircent_loan_portfolio th:nth-child(3){padding:5px;}
+/*
+#fixed-table-header {width: 100%;  display: block;}
+#fixed-table-header thead {display: inline-block; width: 100%; }
+#fixed-table-header tbody{overflow: auto; width: 100%; height: 300px; display: inline-block;}
+*/
+
+
+/*---------- Responsive Design ----------*/
+@media(max-width: 768px){
+#desc-this{margin-left: 0;}
+#desc-this li{font-size: 12px; line-height: 16px;}
+.create-portfolio h3, .select_portfolio_outer h3{font-size: 13px; line-height: 20px;}
+.lender-profile-section .create-portfolio ul li:last-child{padding: 8px 8px 0 8px;}
+.more-info-div{z-index: 9;}
+.select-portfolio li:nth-child(2){margin-right: 0; padding: 0 0;}
+.more-info, #understand_anchor{display: block; margin: 5px 0; left: 0;}
+.lender-profile-section .portfolio-show-amt li p{margin-top: 10px;}
+.summary.summary-middle{border: none;}
+.more-info-div{left: 2px;}
+.more-info-div.more-info-first{margin-top: -80px;}
+.lender-profile-section .portfolio-table .table-options{position: relative;}
+.lender-profile-section .portfolio-table .table-options .default-amt{padding: 0 5px; font-size: 9px;}
+.lender-profile-section .portfolio-table td{padding-bottom: 0;}
+.lender-profile-section .add-loan-portfolio .container-inline-date .date-padding{width: 100%;}
+.lender-profile-section .add-loan-portfolio .container-inline-date .form-item .form-item{width: 100%;}
+.lender-profile-section .add-loan-portfolio .container-inline-date .form-item .form-item input{width: 100% !important;}
+
+.amortization-calculator .add-loan-portfolio li{margin-bottom: 15px;}
+.amortization-calculator .add-loan-portfolio #datepicker{width: 100% !important;}
+.amortization-calculator .form-item.form-type-date-popup.form-item-start-date{width: 100%;}
+.amortization-calculator .add-loan-portfolio li:last-child{text-align: center;;}
+.amortization-calculator .add-loan-portfolio li:last-child input{float: none; width: 75%;}
+
+}
+.faircent-loan-portfolio.header-fixed .add_loan_btn{
+    background: #1376b9 !important;
+    border: #0F74BB;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+.lender-profile-section .portfolio-table td{background: #fcfdfe;}
+.faircent-loan-portfolio.header-fixed .form-type-checkbox{
+float:left;
+}
+.faircent-loan-portfolio.header-fixed {
+   
+   
+    border-bottom: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    width: 100%;
+}
+
+.faircent-loan-portfolio.header-fixed > thead,
+.faircent-loan-portfolio.header-fixed > tbody,
+.faircent-loan-portfolio.header-fixed > thead > tr,
+.faircent-loan-portfolio.header-fixed > tbody > tr,
+.faircent-loan-portfolio.header-fixed > thead > tr > th,
+.faircent-loan-portfolio.header-fixed > tbody > tr > td {
+    display: block;
+}
+
+.faircent-loan-portfolio.header-fixed > tbody > tr:after,
+.faircent-loan-portfolio.header-fixed > thead > tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.faircent-loan-portfolio.header-fixed > tbody {
+    overflow-y: auto;
+    max-height: 290px;
+}
+
+.faircent-loan-portfolio.header-fixed > tbody > tr > td,
+.header-fixed > thead > tr > th {
+   
+    float: left;
+}
+.faircent-loan-portfolio.header-fixed > thead > tr > th {
+height: 52px;
+    vertical-align: middle !important;
+    display: table-caption;     background: #f2f3f4;
+}
+.faircent-loan-portfolio td{color: #333333; font-weight: normal;  font-size: 13px; padding-top: 5px; padding-bottom: 10px;}
+.faircent-loan-portfolio th:nth-child(1),.faircent-loan-portfolio td:nth-child(1){width: 15% !important;}
+.faircent-loan-portfolio th:nth-child(2),.faircent-loan-portfolio td:nth-child(2){width: 15% !important;}
+.faircent-loan-portfolio th:nth-child(3),.faircent-loan-portfolio td:nth-child(3){width: 8%; !important}
+.faircent-loan-portfolio th:nth-child(4),.faircent-loan-portfolio td:nth-child(4){width: 12% !important;}
+.faircent-loan-portfolio th:nth-child(5),.faircent-loan-portfolio td:nth-child(5){width: 8% !important;}
+.faircent-loan-portfolio th:nth-child(6),.faircent-loan-portfolio td:nth-child(6){width: 8% !important;}
+.faircent-loan-portfolio th:nth-child(7),.faircent-loan-portfolio td:nth-child(7){width: 8% !important;}
+.faircent-loan-portfolio th:nth-child(8),.faircent-loan-portfolio td:nth-child(8){width: 20% !important;}
+
+.portfolio_borrower_list{}
+.portfolio_borrower_list .table-responsive{padding-top:10px;}
+.portfolio_borrower_list h3{padding-left:5px;font-size: 14px;}
+.portfolio_borrower_list .default_bor td{color:red;}
+.lender-profile-section .portfolio-table .default_bor .table-options .default-amt{color: #1cb9ff;
+    border-bottom: 2px solid #1cb9ff;/*background:#ea1919;color:#fff;*/}
+.faircent-loan-portfolio .highllight,.faircent-loan-portfolio .highllight td{
+background:#d4f1fd !important;
+}
+.faircent-loan-portfolio .highllight{margin-bottom: 2px;}
+
+.faircent-loan-portfolio ::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+.faircent-loan-portfolio ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(183,183,183,1); 
+   
+}
+ 
+/* Handle */
+.faircent-loan-portfolio ::-webkit-scrollbar-thumb {
+   
+    background: rgba(183,183,183,1); 
+    -webkit-box-shadow: inset 0 0 6px rgba(183,183,183,1); 
+}
+.faircent-loan-portfolio ::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(183,183,183,1); 
+}
+.lender-profile-section .faircent-loan-portfolio tr {
+    background: #fcfdfe;
+}
+.lender-profile-section .form-check-borow .checkbox {width:16px; height:6px; background-color:#b7b7b7; position:relative;margin-right: 10px; margin-top: 2px;margin-bottom: 5px;min-height:17px !important;}
+.lender-profile-section .form-check-borow .checkbox input[type="checkbox"] {visibility: hidden;}
+.lender-profile-section .form-check-borow .checkbox label {width:14px; height:15px; position:absolute; top:1px; left:1px; background-color:white; cursor:pointer;}
+.lender-profile-section .form-check-borow .checkbox label:before {content: ''; width:10px; height:6px; border:3px solid #1376b9; position:absolute; border-top:none; border-right:none;  transform:rotate(-45deg); top:4px; left:2px; opacity:0; transition:all 300ms;}
+.lender-profile-section .form-check-borow .checkbox input[type="checkbox"]:checked + label:before {opacity: 1; width:11px; height:6px;}
+.lender-profile-section .form-check-borow .checkbox input[type="checkbox"]:checked + label {background-color: #fff;}
+.portfolio_form_link {margin-bottom:30px; padding-bottom:27px; border-bottom:1px solid #f5f5f5;}
+.portfolio_form_link ul li{margin-right:15px;}
+.portfolio_form_link ul li.active a{color:#333333; border-bottom:2px solid #0687d9; font-weight:600;}
+.portfolio_form_link ul li a{    color: #b8b8b8; font-weight:600;
+    font-size: 15px;
+    text-transform: uppercase; padding-bottom:5px;}
+.lender-profile-section .portfolio-show-amt li .wallet-balance span.enteramt{background: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    color: #1376b9;
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3); cursor:pointer; z-index:9;}
+.portfolio_borrower_list table>thead>tr>th{background:#0687d9 !important;color:#fff !important;}
+.portfolio_borrower_list table>tbody>tr>td,.portfolio_borrower_list>table>tbody>tr .emi-amts{color:#0687d9 !important;height: 72px;border: 1px solid #ddd;}
+.portfolio_borrower_list table>tbody>tr>td.bluetd{background:#e1f4fa; color:#000000 !important;}
+.tablesorter-childRow td{border:none !important;}
+.tablesorter-childRow table td{line-height:22px !important; border:1px solid #dddddd; height:22px !important;}
+.lender-profile-section .portfolio_borrower_list th:nth-child(2), .lender-profile-section .portfolio_borrower_list td:nth-child(2){width:13%;}
+.lender-profile-section .portfolio_borrower_list th:nth-child(4){
+vertical-align: middle;width:7%;
+}
+.lender-profile-section .portfolio_borrower_list td:nth-child(4){width:8%;}
+.lender-profile-section .portfolio_borrower_list th:nth-child(5), .lender-profile-section .portfolio_borrower_list td:nth-child(5){
+    width: 8%;
+}
+.lender-profile-section .portfolio_borrower_list th:nth-child(7), .lender-profile-section .portfolio_borrower_list td:nth-child(7){
+    width: 8%;
+}
+.lender-profile-section .portfolio_borrower_list th:nth-child(8), .lender-profile-section .portfolio_borrower_list td:nth-child(8){
+    width: 9%;border-right:1px solid #fcfdfe;
+}
+.lender-profile-section .portfolio_borrower_list th:nth-child(9), .lender-profile-section .portfolio_borrower_list td:nth-child(9){
+    width: 26%;position:relative;
+}
+.lender-profile-section .portfolio_borrower_list th:nth-child(3), .lender-profile-section .portfolio_borrower_list td:nth-child(3){width:7%;}
+.lender-profile-section .portfolio_borrower_list th:nth-child(6), .lender-profile-section .portfolio_borrower_list td:nth-child(6){
+width:8%;
+}
+.portfolio_borrower_list .table-options .emi-amts{
+color:#0687d9 !important;
+}
+.portfolio_borrower_list  .select_prop{
+    position: absolute;
+    color: white;
+    text-align: center;
+    right: 130px;
+        margin-top: 5px;
+}
+.portfolio_borrower_list  .select_prop input[type=checkbox]{ 
+position: relative;
+    top: 3px;
+    left: 3px;
+}
+.portfolio_borrower_list .send_proposal{
+    font-size: 11px;
+    background: #1376b9;
+    color: #ffffff;
+    padding:5px 10px;
+    text-transform: uppercase;
+    font-weight:normal;
+    border-radius: 2px;
+}
+.portfolio_borrower_list .table-options {
+    position: absolute;
+    margin-top: 5px;
+}
+.portfolio_borrower_list .select_send_proposal{
+    margin-top: 5px;
+  font-size: 11px;
+    background: #ffffff;
+    color: #1376b9;
+    padding:5px 10px;
+    text-transform: uppercase;
+     font-weight:normal;
+     border-radius: 2px;
+}
+
+.portfolio_borrower_list .emi_heading strong{color:#333;}
+.lender-profile-section .portfolio-table .default_bor .table-options .default-amt.red{color:red !important;text-decoration-color:red;border-bottom:2px solid red !important;}
+.portfolio_borrower_list .send_proposal.sent_prop{    margin-left: 22px;
+    cursor: default;
+    padding: 0;
+    color: #1376b9;
+    background: transparent;
+    font-weight: bold;}
+.select_portfolio_outer.analysis_graph h3{
+margin-bottom:35px;
+}
+.analysis_select_portfolio{-moz-appearance: none;
+   background: #ebf6fc url("../images/return-arrow.png") no-repeat scroll right 10px top 15px !important;
+    border-color:#ccebf1;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: normal;
+    height: 32px;
+    width: 170px;}
+.analysis_graph tr th span,.analysis_graph tr th i{color:#000;font-weight: 600 !important;}
+.analysis_graph tr th{font-weight: normal !important;font-size:13px !important}
+.refresh_f_loan{
+position: absolute;
+    right: 0;
+top: 3px;
+    padding-bottom: 15px;}
+#whatif-portfolio-faircent-loan > div {
+    position: relative;
+}
+ .default-emi-form   .emi_id_check{margin-right:42px !important;}
+
+
+
+.port_bor_list.header-fixed {
+   
+   
+   
+    width: 100%;
+}
+
+.port_bor_list.header-fixed > thead,
+.port_bor_list.header-fixed > tbody,
+.port_bor_list.header-fixed > thead > tr,
+.port_bor_list.header-fixed > tbody > tr,
+.port_bor_list.header-fixed > thead > tr > th,
+.port_bor_list.header-fixed > tbody > tr > td {
+    display: block;
+}
+
+.port_bor_list.header-fixed > tbody > tr:after,
+.faircent-loan-portfolio.header-fixed > thead > tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.port_bor_list.header-fixed > tbody {
+    overflow-y: auto;
+    max-height: 300px;
+  
+    width: 100%;
+}
+
+.port_bor_list.header-fixed > tbody > tr > td,
+.header-fixed > thead > tr > th {
+   
+    float: left;
+}
+.port_bor_list.header-fixed > thead > tr > th {
+height: 52px;
+    vertical-align: middle !important;
+    display: table-caption;     background: #f2f3f4;
+}
+.port_bor_list ::-webkit-scrollbar {
+    width: 8px;
+}
+.portfolio_borrower_list .send_proposal.disabled {
+   pointer-events: none;
+   cursor: no-drop;
+  opacity: 0.5;
+}
+ 
+/* Track */
+.port_bor_list ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(183,183,183,1); 
+   
+}
+ 
+/* Handle */
+.port_bor_list ::-webkit-scrollbar-thumb {
+   
+    background: rgba(183,183,183,1); 
+    -webkit-box-shadow: inset 0 0 6px rgba(183,183,183,1); 
+}
+.port_bor_list ::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(183,183,183,1); 
+}
+.port_bor_list .hiddendata{height:100%;
+    width: 70% !important;}
