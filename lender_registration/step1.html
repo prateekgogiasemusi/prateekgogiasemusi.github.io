@@ -525,25 +525,25 @@ $(document).ready(function(){
             <form role="form">
            <div class="row">
             <div class="float-label-control col-md-6" style="padding-left:0px; margin-bottom: 1em;"> <div class="form-item form-type-textfield form-item-name">
- <input placeholder="First Name" autocomplete="off" tabindex="1" class="form-control col-md-6 form-text required" type="text" id="fname" name="name" value="" size="30" maxlength="64" />
+ <input placeholder="First Name" autocomplete="off" tabindex="1" class="form-control col-md-6 form-text required" type="text" id="firstname" name="name" value="" size="30" maxlength="64" />
 </div>
 </div>        
 	<div class="float-label-control col-md-6 llname" style="padding-right:0px; margin-bottom: 1em;"> <div class="form-item form-type-textfield form-item-lname">
- <input placeholder="Last Name" autocomplete="off" tabindex="1" class="form-control form-text required" type="text" id="lname" name="lname" value="" size="30" maxlength="64" />
+ <input placeholder="Last Name" autocomplete="off" tabindex="1" class="form-control form-text required" type="text" id="lastname" name="lastname" value="" size="30" maxlength="64" />
 </div>
 </div>   
 	 </div>
             <div class="row">
             <div class="float-label-control"><div class="form-item form-type-textfield form-item-email">
- <input placeholder="Email" autocomplete="off" class="form-control form-text required" tabindex="2" onclick="hide_error()" onblur="validate_email_v2()" type="text" id="email_valid" name="email" value="" size="30" maxlength="64" />
+ <input placeholder="Email" autocomplete="off" class="form-control form-text required" tabindex="2" onclick="hide_error()" onblur="validate_email_v2()" type="text" id="email" name="email" value="" size="30" maxlength="64" />
 </div>
             <div id="email_check" style="display: none;"></div></div>
             <div class="float-label-control"><div class="form-item form-type-password form-item-password">
- <input placeholder="Password" autocomplete="off" class="form-control form-text required" tabindex="3" onblur="CheckPasswordStrength(this.value)" type="password" id="show_password" name="password" size="30" maxlength="64" />
+ <input placeholder="Password" autocomplete="off" class="form-control form-text required" tabindex="3" onblur="CheckPasswordStrength(this.value)" type="password" id="password" name="password" size="30" maxlength="64" />
 </div>
 <div id="pass_strength" style="display: none;"></div></div>			
             <div class="float-label-control"><div class="form-item form-type-textfield form-item-mobile">
- <input placeholder="Mobile" class="form-control form-text required" tabindex="4" autocomplete="off" onkeypress="return isNumberKeycountnew(event)" onpaste="return false;" onkeyup="return isNumberKeycountnew(event)" type="text" id="txt2" name="mobile" value="" size="10" maxlength="10" />
+ <input placeholder="Mobile" class="form-control form-text required" tabindex="4" autocomplete="off" onkeypress="return isNumberKeycountnew(event)" onpaste="return false;" onkeyup="return isNumberKeycountnew(event)" type="text" id="mobile" name="mobile" value="" size="10" maxlength="10" />
 </div>
 <div id="verification_msg" style="text-transform:uppercase;"></div><div id="show_mobile_message"></div></div>            <div class="float-label-control" id="optss" style="display:none;"><div class="form-item form-type-textfield form-item-mvcode">
  <input placeholder="OTP" class="form-control form-text" tabindex="4" autocomplete="off" onpaste="return false;" type="text" id="otp" name="mvcode" value="" size="30" maxlength="64" />
