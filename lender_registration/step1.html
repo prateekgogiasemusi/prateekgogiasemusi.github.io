@@ -71,9 +71,31 @@
 
 <script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/appice-databackups/appice-websdk/analytics.js"></script>	
 <script>
-        appICEWeb.set('app_id', "5a5734d5968340545ac46e58");
-        appICEWeb.set('app_key', "fc4f2d2a9304b4521d09d631ef6a67520562ec3c");
-        appICEWeb.set('api_key', "d985715d1bb48942d36d5d08de3b6a8c");
+     var event = {};
+
+  var firstname = document.getElementById("firstname");
+  var lastname = document.getElementById('lastname');
+  var email = document.getElementById('email');
+  var password = document.getElementById('password');
+  var mobile = document.getElementById('mobile');
+  function getdetails() {
+    console.log('firstname: ' + firstname.value);
+    console.log('lastname: ' + lastname.value);
+    console.log('email: ' + email.value);
+    console.log('password: ' + password.value);
+    console.log('mobile: ' + mobile.value);
+    if(firstname.value == "" || lastname.value == "" || email.value == "" || password.value == "" || mobile.value == "") {
+      appICEWeb.set('app_id', "5a16ba59dc636c65a027df55");
+      appICEWeb.set('app_key', "eaef7ad6c14095f5f156a2e4554884daa0312748");
+      appICEWeb.set('api_key', "d985715d1bb48942d36d5d08de3b6a8c");
+      appICEWeb.setEvent({key:'incomplete'});
+    } else if (firstname.value && lastname.value && email.value && password.value && mobile.value) {
+      appICEWeb.set('app_id', "5a16ba59dc636c65a027df55");
+      appICEWeb.set('app_key', "eaef7ad6c14095f5f156a2e4554884daa0312748");
+      appICEWeb.set('api_key', "d985715d1bb48942d36d5d08de3b6a8c");
+      appICEWeb.setEvent({key:'complete'});
+    }
+  }
 </script>
 
 <script type="text/javascript">
